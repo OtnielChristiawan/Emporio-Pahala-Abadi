@@ -1,0 +1,17 @@
+{
+  "name": "bautomate-assessment-cloud-fullstack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack demo portfolio platform asesmen corporate Bautomate",
+  "scripts": {
+    "backend": "nodemon backend/server.js",
+    "backend:start": "node backend/server.js",
+    "frontend": "node frontend/server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm:backend\" \"npm:frontend\"",
+    "check": "node --check backend/server.js && node --check frontend/server.js && node --check frontend/app.js"
+  },
+  "dependencies": { "cors": "^2.8.5", "express": "^4.21.2" },
+  "devDependencies": { "concurrently": "^9.1.2", "nodemon": "^3.1.9" },
+  "engines": { "node": ">=18" }
+}
+

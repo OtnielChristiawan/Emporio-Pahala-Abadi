@@ -1,0 +1,200 @@
+{
+  "company": {
+    "id": "comp-epa",
+    "name": "PT Emporio Pahala Abadi",
+    "workspaceCode": "EPA",
+    "industry": "Corporate Enterprise",
+    "plan": "Corporate Dedicated Demo",
+    "quotaLimit": 500
+  },
+  "accounts": [
+    {
+      "id": "acc-sa",
+      "email": "superadmin@bautomate.id",
+      "password": "bautomate123",
+      "role": "superadmin",
+      "name": "Bautomate Super Admin",
+      "title": "Platform & System Owner",
+      "initials": "SA"
+    },
+    {
+      "id": "acc-adm",
+      "email": "hr@emporiopahalaabadi.co.id",
+      "password": "hr123",
+      "role": "admin",
+      "name": "HR PT Emporio Pahala Abadi",
+      "title": "HR Administrator",
+      "initials": "HR"
+    }
+  ],
+  "teamMembers": [
+    {
+      "id": "usr-1",
+      "initials": "SA",
+      "name": "Bautomate Super Admin",
+      "email": "superadmin@bautomate.id",
+      "position": "Platform Owner",
+      "role": "superadmin",
+      "badge": "Super Admin",
+      "color": "purple"
+    },
+    {
+      "id": "usr-2",
+      "initials": "HR",
+      "name": "HR PT Emporio Pahala Abadi",
+      "email": "hr@emporiopahalaabadi.co.id",
+      "position": "HR Administrator",
+      "role": "admin",
+      "badge": "Admin HR",
+      "color": "green"
+    },
+    {
+      "id": "usr-3",
+      "initials": "RS",
+      "name": "Rina Setiawan, M.Psi.",
+      "email": "rina.psi@emporiopahalaabadi.co.id",
+      "position": "Psikolog Industri (Reviewer)",
+      "role": "admin",
+      "badge": "Admin / Reviewer",
+      "color": "orange"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "session-001",
+      "name": "Management Trainee 2027",
+      "position": "Management Trainee",
+      "modules": ["Kognitif (CFIT)", "Kepribadian (DISC)", "Ketelitian"],
+      "durationMinutes": 75,
+      "participants": 3,
+      "capacity": 100,
+      "status": "Live",
+      "deadline": "30 Nov 2026",
+      "inviteCode": "MT27-EPA1"
+    },
+    {
+      "id": "session-002",
+      "name": "Finance & Accounting Batch 2",
+      "position": "Finance Staff",
+      "modules": ["Numerik & Logika", "Ketelitian (Kraepelin)", "Integritas"],
+      "durationMinutes": 60,
+      "participants": 2,
+      "capacity": 30,
+      "status": "Terjadwal",
+      "deadline": "05 Des 2026",
+      "inviteCode": "FIN2-EPA2"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "cand-001",
+      "sessionId": "session-001",
+      "initials": "NA",
+      "name": "Nadia Azzahra",
+      "email": "nadia.azzahra@example.com",
+      "position": "Management Trainee",
+      "status": "Selesai",
+      "score": 87,
+      "lastActivity": "24 Nov, 14:32",
+      "color": "purple",
+      "proctoring": { "tabSwitches": 0, "cameraStatus": "Verified", "integrity": "Aman" },
+      "report": {
+        "recommendation": "Direkomendasikan ke tahap wawancara user",
+        "personalityType": "High D-I (Penggerak & Komunikatif)",
+        "duration": "72 menit",
+        "aspects": [
+          { "name": "Kemampuan kognitif", "score": 88 },
+          { "name": "Ketelitian kerja", "score": 84 },
+          { "name": "Adaptabilitas", "score": 90 },
+          { "name": "Kolaborasi tim", "score": 86 }
+        ]
+      }
+    },
+    {
+      "id": "cand-002",
+      "sessionId": "session-001",
+      "initials": "RF",
+      "name": "Raka Firmansyah",
+      "email": "raka.f@example.com",
+      "position": "Management Trainee",
+      "status": "Perlu review",
+      "score": 82,
+      "lastActivity": "24 Nov, 13:18",
+      "color": "green",
+      "proctoring": { "tabSwitches": 2, "cameraStatus": "Verified", "integrity": "Perlu Cek (2x pindah tab)" },
+      "report": {
+        "recommendation": "Dipertimbangkan — perlu verifikasi proctoring",
+        "personalityType": "High C-S (Analitis & Terstruktur)",
+        "duration": "69 menit",
+        "aspects": [
+          { "name": "Kemampuan kognitif", "score": 84 },
+          { "name": "Ketelitian kerja", "score": 80 },
+          { "name": "Adaptabilitas", "score": 82 },
+          { "name": "Kolaborasi tim", "score": 81 }
+        ]
+      }
+    },
+    {
+      "id": "cand-003",
+      "sessionId": "session-002",
+      "initials": "SP",
+      "name": "Salsa Permata",
+      "email": "salsa.p@example.com",
+      "position": "Finance Staff",
+      "status": "Berlangsung",
+      "score": null,
+      "lastActivity": "25 Nov, 10:15",
+      "color": "orange",
+      "proctoring": { "tabSwitches": 0, "cameraStatus": "Active", "integrity": "Aman" },
+      "report": {
+        "recommendation": "Asesmen sedang dikerjakan",
+        "personalityType": "—",
+        "duration": "—",
+        "aspects": []
+      }
+    },
+    {
+      "id": "cand-004",
+      "sessionId": "session-001",
+      "initials": "AD",
+      "name": "Ardiansyah Darma",
+      "email": "ardi.darma@example.com",
+      "position": "Management Trainee",
+      "status": "Selesai",
+      "score": 79,
+      "lastActivity": "23 Nov, 16:08",
+      "color": "purple",
+      "proctoring": { "tabSwitches": 0, "cameraStatus": "Verified", "integrity": "Aman" },
+      "report": {
+        "recommendation": "Dipertimbangkan sesuai kebutuhan divisi",
+        "personalityType": "High S-C (Stabil & Teliti)",
+        "duration": "74 menit",
+        "aspects": [
+          { "name": "Kemampuan kognitif", "score": 81 },
+          { "name": "Ketelitian kerja", "score": 78 },
+          { "name": "Adaptabilitas", "score": 80 },
+          { "name": "Kolaborasi tim", "score": 77 }
+        ]
+      }
+    },
+    {
+      "id": "cand-005",
+      "sessionId": "session-002",
+      "initials": "KM",
+      "name": "Keisha Maharani",
+      "email": "keisha.m@example.com",
+      "position": "Finance Staff",
+      "status": "Belum mulai",
+      "score": null,
+      "lastActivity": "23 Nov, 09:11",
+      "color": "green",
+      "proctoring": { "tabSwitches": 0, "cameraStatus": "Pending", "integrity": "Belum mulai" },
+      "report": {
+        "recommendation": "Belum tersedia",
+        "personalityType": "—",
+        "duration": "—",
+        "aspects": []
+      }
+    }
+  ]
+}
