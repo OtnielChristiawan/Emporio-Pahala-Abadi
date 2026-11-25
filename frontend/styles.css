@@ -154,3 +154,4 @@
 .sim-done-icon{width:64px;height:64px;border-radius:50%;background:#e2f5eb;color:var(--green);font-size:1.8rem;font-weight:800;display:grid;place-items:center;margin:0 auto 14px}
 .sim-done-view h3{font:800 1.25rem var(--display);margin:0 0 8px}
 .sim-done-view p{font-size:.82rem;color:var(--muted);line-height:1.6;max-width:440px;margin:0 auto}
+.sim-section-head{font-size:.66rem;font-weight:800;letter-spacing:.09em;color:#fff;background:var(--navy);padding:9px 13px;border-radius:8px;margin-top:6px}

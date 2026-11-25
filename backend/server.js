@@ -218,6 +218,8 @@ app.post('/api/candidates/:id/submit-test', (request, response) => {
   const {
     cognitiveScore = 80,
     precisionScore = 82,
+    adaptabilityScore = 84,
+    collaborationScore = 84,
     discType = 'High I-D (Komunikatif & Persuasif)',
     tabSwitches = 0,
     durationLabel = '12 menit'
@@ -225,8 +227,8 @@ app.post('/api/candidates/:id/submit-test', (request, response) => {
 
   const cog = Math.max(40, Math.min(100, Number(cognitiveScore)));
   const prec = Math.max(40, Math.min(100, Number(precisionScore)));
-  const adapt = Math.round((cog + prec) / 2) + 2;
-  const collab = Math.min(98, Math.round((cog + prec) / 2) + 4);
+  const adapt = Math.max(40, Math.min(100, Number(adaptabilityScore)));
+  const collab = Math.max(40, Math.min(100, Number(collaborationScore)));
   const composite = Math.round((cog + prec + adapt + collab) / 4);
 
   const switches = Number(tabSwitches) || 0;

@@ -61,10 +61,29 @@
   ],
   "sessions": [
     {
+      "id": "session-1795584683288",
+      "name": "sales exsecutive 3",
+      "position": "sales exsecutive",
+      "modules": [
+        "Kognitif (CFIT)",
+        "Kepribadian (DISC)"
+      ],
+      "durationMinutes": 60,
+      "participants": 0,
+      "capacity": 50,
+      "status": "Live",
+      "deadline": "15 Des 2026",
+      "inviteCode": "SALE-EPA70"
+    },
+    {
       "id": "session-001",
       "name": "Management Trainee 2027",
       "position": "Management Trainee",
-      "modules": ["Kognitif (CFIT)", "Kepribadian (DISC)", "Ketelitian"],
+      "modules": [
+        "Kognitif (CFIT)",
+        "Kepribadian (DISC)",
+        "Ketelitian"
+      ],
       "durationMinutes": 75,
       "participants": 3,
       "capacity": 100,
@@ -76,7 +95,11 @@
       "id": "session-002",
       "name": "Finance & Accounting Batch 2",
       "position": "Finance Staff",
-      "modules": ["Numerik & Logika", "Ketelitian (Kraepelin)", "Integritas"],
+      "modules": [
+        "Numerik & Logika",
+        "Ketelitian (Kraepelin)",
+        "Integritas"
+      ],
       "durationMinutes": 60,
       "participants": 2,
       "capacity": 30,
@@ -97,16 +120,32 @@
       "score": 87,
       "lastActivity": "24 Nov, 14:32",
       "color": "purple",
-      "proctoring": { "tabSwitches": 0, "cameraStatus": "Verified", "integrity": "Aman" },
+      "proctoring": {
+        "tabSwitches": 0,
+        "cameraStatus": "Verified",
+        "integrity": "Aman"
+      },
       "report": {
         "recommendation": "Direkomendasikan ke tahap wawancara user",
         "personalityType": "High D-I (Penggerak & Komunikatif)",
         "duration": "72 menit",
         "aspects": [
-          { "name": "Kemampuan kognitif", "score": 88 },
-          { "name": "Ketelitian kerja", "score": 84 },
-          { "name": "Adaptabilitas", "score": 90 },
-          { "name": "Kolaborasi tim", "score": 86 }
+          {
+            "name": "Kemampuan kognitif",
+            "score": 88
+          },
+          {
+            "name": "Ketelitian kerja",
+            "score": 84
+          },
+          {
+            "name": "Adaptabilitas",
+            "score": 90
+          },
+          {
+            "name": "Kolaborasi tim",
+            "score": 86
+          }
         ]
       }
     },
@@ -121,16 +160,32 @@
       "score": 82,
       "lastActivity": "24 Nov, 13:18",
       "color": "green",
-      "proctoring": { "tabSwitches": 2, "cameraStatus": "Verified", "integrity": "Perlu Cek (2x pindah tab)" },
+      "proctoring": {
+        "tabSwitches": 2,
+        "cameraStatus": "Verified",
+        "integrity": "Perlu Cek (2x pindah tab)"
+      },
       "report": {
         "recommendation": "Dipertimbangkan — perlu verifikasi proctoring",
         "personalityType": "High C-S (Analitis & Terstruktur)",
         "duration": "69 menit",
         "aspects": [
-          { "name": "Kemampuan kognitif", "score": 84 },
-          { "name": "Ketelitian kerja", "score": 80 },
-          { "name": "Adaptabilitas", "score": 82 },
-          { "name": "Kolaborasi tim", "score": 81 }
+          {
+            "name": "Kemampuan kognitif",
+            "score": 84
+          },
+          {
+            "name": "Ketelitian kerja",
+            "score": 80
+          },
+          {
+            "name": "Adaptabilitas",
+            "score": 82
+          },
+          {
+            "name": "Kolaborasi tim",
+            "score": 81
+          }
         ]
       }
     },
@@ -145,7 +200,11 @@
       "score": null,
       "lastActivity": "25 Nov, 10:15",
       "color": "orange",
-      "proctoring": { "tabSwitches": 0, "cameraStatus": "Active", "integrity": "Aman" },
+      "proctoring": {
+        "tabSwitches": 0,
+        "cameraStatus": "Active",
+        "integrity": "Aman"
+      },
       "report": {
         "recommendation": "Asesmen sedang dikerjakan",
         "personalityType": "—",
@@ -164,16 +223,32 @@
       "score": 79,
       "lastActivity": "23 Nov, 16:08",
       "color": "purple",
-      "proctoring": { "tabSwitches": 0, "cameraStatus": "Verified", "integrity": "Aman" },
+      "proctoring": {
+        "tabSwitches": 0,
+        "cameraStatus": "Verified",
+        "integrity": "Aman"
+      },
       "report": {
         "recommendation": "Dipertimbangkan sesuai kebutuhan divisi",
         "personalityType": "High S-C (Stabil & Teliti)",
         "duration": "74 menit",
         "aspects": [
-          { "name": "Kemampuan kognitif", "score": 81 },
-          { "name": "Ketelitian kerja", "score": 78 },
-          { "name": "Adaptabilitas", "score": 80 },
-          { "name": "Kolaborasi tim", "score": 77 }
+          {
+            "name": "Kemampuan kognitif",
+            "score": 81
+          },
+          {
+            "name": "Ketelitian kerja",
+            "score": 78
+          },
+          {
+            "name": "Adaptabilitas",
+            "score": 80
+          },
+          {
+            "name": "Kolaborasi tim",
+            "score": 77
+          }
         ]
       }
     },
@@ -188,7 +263,11 @@
       "score": null,
       "lastActivity": "23 Nov, 09:11",
       "color": "green",
-      "proctoring": { "tabSwitches": 0, "cameraStatus": "Pending", "integrity": "Belum mulai" },
+      "proctoring": {
+        "tabSwitches": 0,
+        "cameraStatus": "Pending",
+        "integrity": "Belum mulai"
+      },
       "report": {
         "recommendation": "Belum tersedia",
         "personalityType": "—",

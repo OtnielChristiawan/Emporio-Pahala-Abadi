@@ -726,12 +726,36 @@ document.querySelector('#test-sim-form')?.addEventListener('submit', async (e) =
   const candidateId = document.querySelector('#sim-candidate-id')?.value;
   if (!candidateId) return;
 
-  const q1 = Number(form.q1.value);
-  const q2 = Number(form.q2.value);
-  const discType = form.q3.value;
+  // 1. Kemampuan Kognitif (3 soal: 0-3 benar -> skor 55..96)
+  const cogCorrect = Number(form.cog1.value) + Number(form.cog2.value) + Number(form.cog3.value);
+  const cognitiveScore = [55, 70, 84, 96][cogCorrect] || 70;
 
-  const cognitiveScore = q1 === 1 ? 90 : 72;
-  const precisionScore = q2 === 1 ? 88 : 70;
+  // 2. Ketelitian & Numerik (3 soal: 0-3 benar -> skor 55..95)
+  const precCorrect = Number(form.prec1.value) + Number(form.prec2.value) + Number(form.prec3.value);
+  const precisionScore = [55, 68, 82, 95][precCorrect] || 70;
+
+  // 3. Adaptabilitas & Integritas SJT (rata-rata 3 soal)
+  const adaptabilityScore = Math.round(
+    (Number(form.adapt1.value) + Number(form.adapt2.value) + Number(form.adapt3.value)) / 3
+  );
+
+  // 4. Profil Gaya Kerja DISC (3 soal) & Kolaborasi
+  const discCounts = { D: 0, I: 0, S: 0, C: 0 };
+  [form.disc1.value, form.disc2.value, form.disc3.value].forEach((val) => {
+    if (discCounts[val] !== undefined) discCounts[val] += 1;
+  });
+  const sortedDisc = Object.entries(discCounts).sort((a, b) => b[1] - a[1]);
+  const primary = sortedDisc[0][0];
+  const secondary = sortedDisc[1][0];
+  const discLabels = {
+    D: 'Dominance (Penggerak & Tegas)',
+    I: 'Influence (Komunikatif & Persuasif)',
+    S: 'Steadiness (Stabil & Kooperatif)',
+    C: 'Compliance (Analitis & Teliti)'
+  };
+  const discType = `High ${primary}-${secondary} (${discLabels[primary]})`;
+  const collaborationScore = primary === 'I' || primary === 'S' ? 90 : 84;
+
   const elapsedSec = 900 - simSecondsLeft;
   const durationLabel = `${Math.max(1, Math.ceil(elapsedSec / 60))} menit`;
 
@@ -741,6 +765,8 @@ document.querySelector('#test-sim-form')?.addEventListener('submit', async (e) =
       body: JSON.stringify({
         cognitiveScore,
         precisionScore,
+        adaptabilityScore,
+        collaborationScore,
         discType,
         tabSwitches: simTabSwitches,
         durationLabel
